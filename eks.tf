@@ -31,7 +31,7 @@ resource "aws_eks_node_group" "node-ec2" {
   ami_type       = "AL2_x86_64"
   instance_types = ["t3a.large"]
   capacity_type  = "ON_DEMAND"
-  disk_size      = 8
+  disk_size      = 50
 
   depends_on = [
     aws_iam_role_policy_attachment.AmazonEKSWorkerNodePolicy,
